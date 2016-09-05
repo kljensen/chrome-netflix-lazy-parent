@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Netflix Lazy Parent",
+  "version": "0.1",
+  "permissions": ["https://www.netflix.com/kids*", "storage"],
+  "content_scripts": [
+    {
+      "run_at": "document_start",
+      "matches": ["https://www.netflix.com/kids*"],
+      "js": ["lazy-parent.js"]
+    }
+  ],
+  "options_page": "options.html"
+}
