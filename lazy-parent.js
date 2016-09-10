@@ -3,7 +3,7 @@
 function init() {
   // Get our list of bannedLabels, one per line.
   chrome.storage.sync.get({
-    bannedLabels: [],
+    bannedLabels: '',
   }, function(items) {
 
     // Create a new stylesheet

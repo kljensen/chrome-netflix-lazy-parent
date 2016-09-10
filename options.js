@@ -18,7 +18,7 @@ function save_options() {
 function restore_options() {
   // Use default value color = 'red' and likesColor = true.
   chrome.storage.sync.get({
-    bannedLabels: [],
+    bannedLabels: '',
   }, function(items) {
     document.getElementById('bannedLabels').value = items.bannedLabels;
   });
