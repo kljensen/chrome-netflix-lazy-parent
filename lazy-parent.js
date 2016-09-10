@@ -29,4 +29,7 @@ function init() {
     document.body.appendChild(sheet);
   });
 }
-init();
+
+document.addEventListener("DOMContentLoaded", function() {
+  init();
+});
